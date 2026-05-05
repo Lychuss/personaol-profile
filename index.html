@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <title>
+    Personal Portfolio
+  </title>
+
+  <meta name="description" content="Inspiring full stack developer">
+  <meta name="keywords" content="Raphael Mharcus G. San Juan" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- Header  -->
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Techstacks</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+
+          <!-- dark mode and light mode -->
+          <li class="nav__item nav__item--toggle">
+            <div class="toggle-switch" id="toggleSwitch" title="Toggle Light/Dark Mode">
+              <div class="toggle-switch__circle"></div>
+            </div>
+          </li>
+
+        </ul>
+
+        <!-- Burger style icon -->
+        <button class="nav__burger" id="burgerBtn" aria-label="Open menu">
+          <span class="nav__burger-line"></span>
+          <span class="nav__burger-line"></span>
+          <span class="nav__burger-line"></span>
+        </button>
+
+      </nav>
+
+      <!-- Dropdown menu of the burger icon -->
+      <div class="nav__mobile-menu" id="mobileMenu">
+        <button class="nav__mobile-close" id="mobileMenuCloseBtn" aria-label="Close menu">&times;</button>
+        <ul class="nav__mobile-items">
+          <li><a href="#work" class="nav__link nav__mobile-link" id="mobileMenuClose1">Work</a></li>
+          <li><a href="#clients" class="nav__link nav__mobile-link" id="mobileMenuClose2">Hubbies</a></li>
+          <li><a href="#about" class="nav__link nav__mobile-link" id="mobileMenuClose3">About</a></li>
+          <li><a href="#contact" class="nav__link nav__mobile-link" id="mobileMenuClose4">Contact</a></li>
+
+          <!-- Mode toggle text button for mobile -->
+          <li>
+            <button class="nav__mobile-mode-btn" id="mobileModeBtn">Light Mode</button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Raphael San Juan</span>
+        </h1>
+        <p>A Full Stack Developer</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+    <!-- Work -->
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Coffee Shop Website</h3>
+              <p>
+                An e-commerce website that allows you to order coffees and foods
+              </p>
+              <ul class="work__list">
+                <li>React</li>
+                <li>PostgreSQL</li>
+                <li>Express</li>
+                <li>Next JS</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://yes-park-cafe-frontend.vercel.app/" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/Lychuss/yes-park-cafe-frontend" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/coffee-shop.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>WatchParty</h3>
+              <p>
+                A website like google meet where people can create a room and videocall, message, and chat
+              </p>
+              <ul class="work__list">
+                <li>React</li>
+                <li>PostgreSQL</li>
+                <li>Express</li>
+                <li>Next JS</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://watch-party-frontend-three.vercel.app/" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/Lychuss/watch-party-frontend">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/watch-party.png" class="work__image" alt="Project 2" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Student Grading System</h3>
+              <p>
+                An application that can calculate grade, create to-do list, and calculate general average
+              </p>
+              <ul class="work__list">
+                <li>Java</li>
+                <li>JavaFX</li>
+                <li>MySQL</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/Lychuss/StudentGradingSystem">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+
+            <div class="work__image-box">
+              <img src="./images/grading-system.png" class="work__image" alt="Project 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Techstacks -->
+
+    <section class="client" id="clients">
+      <div class="row">
+        <h2>Techstacks</h2>
+        <div class="client__logos">
+          <img src="./images/ts.png" class="client__logo" alt="Company 2" />
+          <img src="./images/js.png" class="client__logo" alt="Company 3" />
+          <img src="./images/python.png" class="client__logo" alt="Company 1" />
+          <img src="./images/java.png" class="client__logo" alt="Company 1" />
+          <img src="./images/html.png" class="client__logo" alt="Company 3" />
+          <img src="./images/cs.png" class="client__logo" alt="Company 1" />
+          <img src="./images/postgre.png" class="client__logo" alt="Company 1" />
+          <img src="./images/mysql.png" class="client__logo" alt="Company 1" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              I enjoy building full stack websites, where I can bring ideas to life from both the 
+              front-end and back-end. Coding has become something I genuinely love, especially 
+              when solving problems and creating functional systems. Outside of programming, I 
+              like playing basketball, which helps me stay active and competitive. I also enjoy
+              watching anime as a way to relax and get inspired by different stories and 
+              creativity.
+            </p>
+            <a href="https://docs.google.com/document/d/1rJPQCIOh9_CMYDA_Sz4xXuWLg4fsM2D4/edit?usp=sharing&ouid=104699852153012630727&rtpof=true&sd=true" class="btn" target="_blank">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <img class="about__photo" id="aboutPhoto" src="./images/evening-picture.png" alt="evening picture" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          I am a second-year computer engineering student with a growing passion for becoming 
+          a full stack developer and software engineer. As I continue my studies, I am building
+          a strong foundation in both hardware and software concepts while focusing on improving 
+          my programming skills. I have started exploring technologies such as Java, TypeScript,
+          web development frameworks, and database systems to better understand how modern 
+          applications are built. My goal is to create efficient, scalable, and user-friendly
+          systems that solve real-world problems. I am constantly learning and challenging 
+          myself through projects, practice, and experimentation to sharpen my skills. 
+          With dedication and continuous growth, I aim to become a highly competent developer
+          who can contribute meaningfully to the tech industry.
+        </p>
+        <a href="https://mail.google.com/mail/?view=cm&to=raphaelsanjuan17@gmail.com" 
+            class="btn" target="_blank">raphaelsanjuan17@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!--  Footer -->
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://x.com/shggjjmmm" title="Link to Twitter Profile">
+            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://github.com/Lychuss" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/raphael-mharcus-san-juan-b73638275?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
